@@ -37,6 +37,7 @@ GEM
     tilt (2.0.10)
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
+    vcr (3.0.3)
     zeitwerk (2.2.2)
 
 PLATFORMS
@@ -46,6 +47,7 @@ DEPENDENCIES
   nokogiri
   sinatra
   sinatra-contrib
+  vcr (~> 3.0, >= 3.0.1)
 
 BUNDLED WITH
    1.16.2
