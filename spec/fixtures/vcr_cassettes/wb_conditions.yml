@@ -1,0 +1,100 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://m.whistlerblackcomb.com/m/app-temps-2016.php
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 19 Feb 2020 01:21:49 GMT
+      Server:
+      - Apache
+      Upgrade:
+      - h2
+      Connection:
+      - Upgrade
+      Content-Length:
+      - '5231'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: UTF-8
+      string: "<!doctype html>\r\n<html class=\"no-js\" lang=\"en\">\r\n  <head>\r\n
+        \ \r\n<title>LiveApp - Temperatures</title>\r\n    <meta name=\"viewport\"
+        content=\"width=device-width, user-scalable=no\" />\r\n  <!-- ### JQM ###
+        -->\r\n\r\n\r\n\r\n   <meta http-equiv=\"Cache-control\" content=\"public\">
+        \ \r\n\r\n\r\n    <meta charset=\"utf-8\" />\r\n    <meta http-equiv=\"x-ua-compatible\"
+        content=\"ie=edge\">\r\n    <link rel=\"stylesheet\" href=\"foundation5/foundation.css\"
+        />\r\n    <link rel=\"stylesheet\" href=\"foundation5/foundation-icons.css\"
+        />  \r\n    <link rel=\"stylesheet\" href=\"foundation5/app.css\" />\r\n    \r\n
+        \   \r\n <!--    <script src=\"foundation5/jquery.js\"></script> -->\r\n     <script
+        src=\"foundation5/foundation.min.js\"></script>  \r\n\r\n    \r\n  </head>\r\n<body>\r\n<script>\r\n
+        \ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\r\n
+        \ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\r\n
+        \ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\r\n
+        \ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');\r\n\r\n
+        \ ga('create', 'UA-16157248-1', 'auto');\r\n  ga('send', 'pageview');\r\n\r\n</script>\r\n\r\n<style>\n.hidden
+        {display:none;}\n\t.peak {display: inherit}\n\t.rhl {display: inherit}\n\t.horstman{display:
+        inherit}\n\t.cat{display: inherit}\n\t.village {display: inherit}\n\t.rendezvous
+        {display: inherit}\n\t.pig {display: inherit}\n\t.creek {display:none}\n</style>\n\n\n\n\n\n\n\n\n\n\n\n<div
+        class=\"info2\"><h5>Weather Stations</h5><span style=\"margin-left:1rem;\">Tap
+        on station for detailed listing:</span></div>\n\n\n\n\n\n<div class='row'>\n<a
+        href='weather-station-peak.php'>\n<div class='small-12 columns peak'>\n<div
+        data-alert class='alert-box info radius'>\n<strong><span class='is-uppercase'><span
+        class='hide-for-small'>Whistler </span>Peak</span></strong><h4>-8.0&deg;C<i
+        class='fi-play'></i><br />18&deg;F</h4>\n\n</div>\n</div></a>\n\n\n<a href='weather-station-horstman.php'><div
+        class='small-12 columns horstman'>\n<div data-alert class='alert-box info
+        radius'>\n<strong><span class='is-uppercase'>Horstman</span></strong><h4>-8.9&deg;C<i
+        class='fi-play'></i><br />18&deg;F</h4>\n\n</div>\n</div></a>\n</div>\n\n\n<div
+        class='row'>\n<a href='weather-station-rhl.php'><div class='small-12 columns
+        rhl'>\n<div data-alert class='alert-box info radius'>\n<strong><span class='is-uppercase'>Roundhouse</span></strong><h4>-6.8&deg;C<i
+        class='fi-play'></i><br />21&deg;F</h4>\n\n</div>\n</div></a>\n\n\n<a href='weather-station-rendezvous.php'><div
+        class='small-12 columns rendezvous'>\n<div data-alert class='alert-box info
+        radius'>\n<strong><span class='is-uppercase'>Rendezvous</span></strong><h4>-4.4&deg;C<i
+        class='fi-play'></i><br />25&deg;F</h4>\n\n</div>\n</div></a>\n</div>\n\n\n<div
+        class='row '>\n\n<a href='weather-station-crystal.php'><div class='small-12
+        columns crystal'>\n<div data-alert class='alert-box info radius'>\n<strong><span
+        class='is-uppercase'>Crystal</span></strong><h4>-7.0&deg;C<i class='fi-play'></i><br
+        />19&deg;F</h4>\n</div>\n</div></a>\n\n\n<a href='weather-station-pig.php'><div
+        class='small-12 columns pig'>\n<div data-alert class='alert-box info radius'>\n<strong><span
+        class='is-uppercase'>Pig Alley</span></strong><h4>-8.6&deg;C<i class='fi-play'></i><br
+        />18&deg;F</h4>\n</div>\n</div></a>\n\n\n</div>\n\n\n<div class='row'>\n<a
+        href='weather-station-cat.php'><div class='small-12 columns cat'>\n<div data-alert
+        class='alert-box info radius'>\n<strong><span class='is-uppercase'>Catskinner</span></strong><h4>-5.0&deg;C<i
+        class='fi-play'></i><br />23&deg;F</h4>\n</div>\n</div></a>\n</div>\n\n\n<div
+        class='row'>\n<a href='weather-station-village.php'><div class='small-12 columns
+        village'>\n<div data-alert class='alert-box secondary radius'>\n<strong><span
+        class='is-uppercase'>Village</span></strong><h4>-0.3&deg;C<i class='fi-play'></i><br
+        />32&deg;F</h4>\n</div>\n</div></a>\n</div>\n\n<div class='row'>\n<a href='weather-station-creek.php'><div
+        class='small-12 columns creek'>\n<div data-alert class='alert-box secondary
+        radius'>\n<strong><span class='is-uppercase'>Creekside</span></strong><h4>N<i
+        class='fi-play'></i><br />A</h4>\n</div>\n</div></a>\n</div>\n\n\n\n\n\n\n\n\n\n</div>\n\n\n<!--
+        \n\n\n<div class='row'>\n<a href='weather-station-rhl.php'><div class='small-6
+        columns'>\n<div data-alert class='alert-box {$talert7} radius'>\n<strong><span
+        class='is-uppercase'>Roundhouse</span></strong><h4>{$f7}{$met7}<i class='fi-play'></i><br
+        />{$g7}{$imp7}</h4>\n\"; if (($f7w >= 60) && ($f7w < 150)) {echo \"<i class='fi-alert
+        windAlert' > </i><span class='hide-for-small'>Wind reaching: {$f7w}km/h</span>\";}\necho\"\n</div>\n</div></a>\n\n\n<div
+        class='row'>\n<div class='small-6 columns'>\n<div data-alert class='alert-box
+        secondary radius'>\n<strong><span class='is-uppercase'>Roundhouse</span></strong><h4>N/A</h4>Offline\n</div>\n</div>\n\n\n\n\n<div
+        class='row'>\n<a href='weather-station-rhl.php'><div class='small-6 columns'>\n<div
+        data-alert class='alert-box {$talert7} radius'>\n<strong><span class='is-uppercase'>Roundhouse</span></strong><h4>{$f7}{$met7}<i
+        class='fi-play'></i><br />{$g7}{$imp7}</h4>\n\"; if (($f7w >= 60) && ($f7w
+        < 150)) {echo \"<i class='fi-alert windAlert' > </i><span class='hide-for-small'>Wind
+        reaching: {$f7w}km/h</span>\";}\necho\"\n</div>\n</div></a>\n-->   \r\n\r\n\r\n\r\n\r\n\r\n
+        \           <script>\r\n    $(document).foundation();\r\n  </script>\r\n  </body>\r\n</html>\r\n"
+    http_version: 
+  recorded_at: Wed, 19 Feb 2020 01:21:50 GMT
+recorded_with: VCR 3.0.3
