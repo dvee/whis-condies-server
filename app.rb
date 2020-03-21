@@ -4,6 +4,8 @@ require_relative 'services'
 
 class WhisCondiesApp < Sinatra::Base
 
+  set :protection, :except => :json_csrf
+
   configure do
     @@conditions_getter = ConditionsGetter.new
   end
