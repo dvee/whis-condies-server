@@ -11,4 +11,8 @@ gem 'sinatra-contrib'
 
 gem 'nokogiri'
 
-gem 'vcr', '~> 3.0', '>= 3.0.1'
+group :test do
+  gem 'rspec'
+  gem 'webmock'
+  gem 'vcr', '~> 3.0', '>= 3.0.1'
+end
