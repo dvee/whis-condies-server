@@ -13,6 +13,7 @@ gem 'nokogiri'
 
 group :test do
   gem 'rspec'
-  gem 'webmock'
+  gem 'webmock', '>=3.8'
   gem 'vcr', '~> 3.0', '>= 3.0.1'
+  gem 'pry'
 end

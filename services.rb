@@ -20,20 +20,17 @@ class ConditionsGetter
   end
 
   def fetch_conditions
-    uri = URI('https://m.whistlerblackcomb.com/m/app-temps-2016.php')
+    uri = URI('https://www.whistlerblackcomb.com/the-mountain/mountain-conditions/snow-and-weather-report.aspx')
     response = Net::HTTP.get_response(uri)
     doc = Nokogiri::HTML(response.body)
 
-    div_classes = ["peak", "rhl", "village"]
-
-    temps = div_classes.map do |c|
-      s = doc.css("div.#{c} h4").text
-      s.match(/(-?\d+\.\d+)°C/)&.captures&.first&.to_f
-    end
+    text_values = doc.css("div.live_temperature__temperature_display div.live_temperature__international_only").map(&:text)
+    float_values = text_values.map { |s| s.match(/(-?\d+)\s?°C/)&.captures&.first&.to_f }
+    float_values.delete(2) # pig alley temp
 
     @last_fetch = Time.now
 
-    return ["peak", "mid", "valley"].zip(temps).to_h.merge(
+    return ["peak", "mid", "valley"].zip(float_values).to_h.merge(
       {
         "last_updated" => @last_fetch
       }
