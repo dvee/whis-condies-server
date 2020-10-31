@@ -26,7 +26,7 @@ class ConditionsGetter
 
     text_values = doc.css("div.live_temperature__temperature_display div.live_temperature__international_only").map(&:text)
     float_values = text_values.map { |s| s.match(/(-?\d+)\s?°C/)&.captures&.first&.to_f }
-    float_values.delete(2) # pig alley temp
+    float_values.delete_at(2) # remove pig alley temp
 
     @last_fetch = Time.now
 
